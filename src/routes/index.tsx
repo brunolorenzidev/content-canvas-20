@@ -94,16 +94,11 @@ function Header() {
 function Hero() {
   return (
     <section className="relative overflow-hidden text-brand-foreground" style={{ background: "var(--gradient-brand)" }}>
-      <img
-        src={heroCar}
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover opacity-30 mix-blend-luminosity"
-      />
-      <div className="relative mx-auto grid min-h-[100vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-32 lg:grid-cols-2">
+      <div className="pointer-events-none absolute inset-0 z-0 opacity-80 mix-blend-screen">
+        <SmokeBackground smokeColor="#39FF6A" />
+      </div>
+      <div className="relative z-10 mx-auto grid min-h-[100vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-32 lg:grid-cols-2">
         <div className="relative">
-          <div className="pointer-events-none absolute -inset-x-20 -inset-y-16 -z-0 opacity-70 mix-blend-screen">
-            <SmokeBackground smokeColor="#39FF6A" />
-          </div>
           <div className="relative">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-brand-foreground/70">
             Nanotecnologia automotiva
