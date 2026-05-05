@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Instagram, ChevronUp, Check } from "lucide-react";
+import { MarqueeBanner } from "@/components/MarqueeBanner";
 import heroCar from "@/assets/hero-car.jpg";
 import grafenoProduct from "@/assets/grafeno-product.png";
 import grafenoLogo from "@/assets/grafeno-logo.png";
@@ -353,6 +354,7 @@ function Index() {
     <main className="min-h-screen bg-background font-display text-foreground">
       <Header />
       <Hero />
+      <MarqueeBanner />
       <ProductSection />
       <BenefitsDark />
       <TechSection />
