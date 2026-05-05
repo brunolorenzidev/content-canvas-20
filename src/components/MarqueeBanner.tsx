@@ -13,31 +13,32 @@ export function MarqueeBanner() {
     <section
       aria-label="Valores Grafeno Coat"
       style={{ background: "var(--gradient-brand)" }}
-      className="relative overflow-hidden border-y border-brand-foreground/10 py-10"
+      className="relative w-full overflow-hidden border-y border-brand-foreground/10 py-5"
     >
       <div
-        className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32"
+        className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20"
         style={{ background: "linear-gradient(to right, rgba(0,0,0,0.6), transparent)" }}
       />
       <div
-        className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32"
+        className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20"
         style={{ background: "linear-gradient(to left, rgba(0,0,0,0.6), transparent)" }}
       />
       <div
-        className="flex gap-16 whitespace-nowrap"
+        className="flex whitespace-nowrap"
         style={{
-          animation: "marquee-scroll 40s linear infinite",
+          animation: "marquee-scroll 35s linear infinite",
           perspective: "800px",
+          willChange: "transform",
         }}
       >
         {loop.map((w, i) => (
           <span
             key={i}
-            className="font-display text-5xl font-extrabold uppercase tracking-tight text-brand-foreground/90 md:text-7xl"
+            className="inline-flex items-center font-display text-3xl font-extrabold uppercase tracking-tight text-brand-foreground/90 sm:text-4xl md:text-5xl"
             style={{ transform: "rotateX(12deg)" }}
           >
             {w}
-            <span className="mx-8 text-brand">•</span>
+            <span className="mx-6 text-brand">•</span>
           </span>
         ))}
       </div>
