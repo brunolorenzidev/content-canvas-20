@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Instagram, ChevronUp, Check } from "lucide-react";
 import { MarqueeBanner } from "@/components/MarqueeBanner";
+import { SmokeBackground } from "@/components/ui/spooky-smoke-animation";
 import heroCar from "@/assets/hero-car.jpg";
 import grafenoProduct from "@/assets/grafeno-product.png";
 import grafenoLogo from "@/assets/grafeno-logo.png";
@@ -99,7 +100,11 @@ function Hero() {
         className="absolute inset-0 h-full w-full object-cover opacity-30 mix-blend-luminosity"
       />
       <div className="relative mx-auto grid min-h-[100vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-32 lg:grid-cols-2">
-        <div>
+        <div className="relative">
+          <div className="pointer-events-none absolute -inset-x-20 -inset-y-16 -z-0 opacity-70 mix-blend-screen">
+            <SmokeBackground smokeColor="#39FF6A" />
+          </div>
+          <div className="relative">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-brand-foreground/70">
             Nanotecnologia automotiva
           </p>
@@ -113,7 +118,7 @@ function Hero() {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <ChevronButton variant="brand">Saiba como revender</ChevronButton>
-            <ChevronButton variant="outline">Ver tecnologia</ChevronButton>
+          </div>
           </div>
         </div>
         <div className="relative">
