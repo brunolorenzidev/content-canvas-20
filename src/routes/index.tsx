@@ -100,7 +100,27 @@ function Hero() {
         className="absolute inset-0 h-full w-full object-cover opacity-30 mix-blend-luminosity"
       />
       <div className="relative mx-auto grid min-h-[100vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-32 lg:grid-cols-2">
-        <div>
+        <div className="relative">
+          <div className="pointer-events-none absolute -inset-x-20 -inset-y-16 -z-0 opacity-70 mix-blend-screen">
+            <SmokeBackground smokeColor="#39FF6A" />
+          </div>
+          <div className="relative">
+          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-brand-foreground/70">
+            Nanotecnologia automotiva
+          </p>
+          <h1 className="font-display text-5xl font-extrabold leading-[1.05] md:text-7xl">
+            GRAFENO <span className="block text-brand">COAT</span>
+          </h1>
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-foreground/85 md:text-lg">
+            Uma evolução dos sistemas de proteção de pintura automotiva, com nano partículas
+            e moléculas que proporcionam maior nível de resistência, aumentando a intensidade
+            do brilho e melhorando a profundidade de cor com uma incrível sensação ao toque.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <ChevronButton variant="brand">Saiba como revender</ChevronButton>
+          </div>
+          </div>
+        </div>
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-brand-foreground/70">
             Nanotecnologia automotiva
           </p>
