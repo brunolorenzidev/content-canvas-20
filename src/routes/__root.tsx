@@ -32,11 +32,15 @@ export const Route = createRootRoute({
       { title: "Grafeno Coat — Revestimento de Grafeno 9H | 5 anos de garantia" },
       { name: "description", content: "Grafeno Coat: revestimento híbrido de grafeno para pintura automotiva, 9H de dureza e 5 anos de garantia. Da Alcance Profissional." },
       { name: "author", content: "Alcance Profissional" },
-      { property: "og:title", content: "Grafeno Coat" },
-      { property: "og:description", content: "Revestimento de grafeno 9H com 5 anos de garantia." },
+      { property: "og:title", content: "Grafeno Coat — Revestimento de Grafeno 9H | 5 anos de garantia" },
+      { property: "og:description", content: "Grafeno Coat: revestimento híbrido de grafeno para pintura automotiva, 9H de dureza e 5 anos de garantia. Da Alcance Profissional." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Grafeno Coat — Revestimento de Grafeno 9H | 5 anos de garantia" },
+      { name: "twitter:description", content: "Grafeno Coat: revestimento híbrido de grafeno para pintura automotiva, 9H de dureza e 5 anos de garantia. Da Alcance Profissional." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a0305999-065b-4b7c-8f4a-0bd7ab1c9d65/id-preview-651d0be9--d09f817a-1528-47b4-9b40-df68fb7072d8.lovable.app-1778001676139.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a0305999-065b-4b7c-8f4a-0bd7ab1c9d65/id-preview-651d0be9--d09f817a-1528-47b4-9b40-df68fb7072d8.lovable.app-1778001676139.png" },
     ],
     links: [
       {
