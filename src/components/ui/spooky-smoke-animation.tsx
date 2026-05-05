@@ -26,8 +26,9 @@ void main(){
   col.g-=fbm(uv*1.003+vec2(0,T*.015)+n+.003);
   col.b-=fbm(uv*1.006+vec2(0,T*.015)+n+.006);
   col=mix(col, u_color, dot(col,vec3(.21,.71,.07)));
-  col=mix(vec3(.04),col,min(time*.1,1.));
-  col=clamp(col,.04,1.);
+  col=mix(col, u_color*1.4, .35);
+  col=mix(vec3(.02),col,min(time*.1,1.));
+  col=clamp(col,.02,1.);
   O=vec4(col,1);
 }`;
 

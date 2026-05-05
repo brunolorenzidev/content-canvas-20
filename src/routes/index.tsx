@@ -94,8 +94,8 @@ function Header() {
 function Hero() {
   return (
     <section className="relative overflow-hidden text-brand-foreground" style={{ background: "var(--gradient-brand)" }}>
-      <div className="pointer-events-none absolute inset-0 z-0 opacity-80 mix-blend-screen">
-        <SmokeBackground smokeColor="#39FF6A" />
+      <div className="pointer-events-none absolute inset-0 z-0">
+        <SmokeBackground smokeColor="#00FF55" />
       </div>
       <div className="relative z-10 mx-auto grid min-h-[100vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-32 lg:grid-cols-2">
         <div className="relative">
@@ -125,10 +125,6 @@ function Hero() {
           <div className="absolute -inset-10 -z-0 rounded-full bg-brand/30 blur-3xl" />
         </div>
       </div>
-      {/* curved bottom */}
-      <svg className="absolute bottom-0 left-0 w-full text-background" viewBox="0 0 1440 80" preserveAspectRatio="none">
-        <path d="M0,80 C480,0 960,0 1440,80 L1440,80 L0,80 Z" fill="currentColor" />
-      </svg>
     </section>
   );
 }
