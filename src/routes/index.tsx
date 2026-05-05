@@ -121,22 +121,15 @@ function Hero() {
           </div>
           </div>
         </div>
-          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-brand-foreground/70">
-            Nanotecnologia automotiva
-          </p>
-          <h1 className="font-display text-5xl font-extrabold leading-[1.05] md:text-7xl">
-            GRAFENO <span className="block text-brand">COAT</span>
-          </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-foreground/85 md:text-lg">
-            Uma evolução dos sistemas de proteção de pintura automotiva, com nano partículas
-            e moléculas que proporcionam maior nível de resistência, aumentando a intensidade
-            do brilho e melhorando a profundidade de cor com uma incrível sensação ao toque.
-          </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <ChevronButton variant="brand">Saiba como revender</ChevronButton>
-            <ChevronButton variant="outline">Ver tecnologia</ChevronButton>
-          </div>
+        <div className="relative">
+          <img
+            src={grafenoProduct}
+            alt="Embalagens e frasco Grafeno Coat"
+            className="relative z-10 mx-auto w-full max-w-lg drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+          />
+          <div className="absolute -inset-10 -z-0 rounded-full bg-brand/30 blur-3xl" />
         </div>
+      </div>
         <div className="relative">
           <img
             src={grafenoProduct}
