@@ -130,15 +130,6 @@ function Hero() {
           <div className="absolute -inset-10 -z-0 rounded-full bg-brand/30 blur-3xl" />
         </div>
       </div>
-        <div className="relative">
-          <img
-            src={grafenoProduct}
-            alt="Embalagens e frasco Grafeno Coat"
-            className="relative z-10 mx-auto w-full max-w-lg drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
-          />
-          <div className="absolute -inset-10 -z-0 rounded-full bg-brand/30 blur-3xl" />
-        </div>
-      </div>
       {/* curved bottom */}
       <svg className="absolute bottom-0 left-0 w-full text-background" viewBox="0 0 1440 80" preserveAspectRatio="none">
         <path d="M0,80 C480,0 960,0 1440,80 L1440,80 L0,80 Z" fill="currentColor" />
