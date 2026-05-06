@@ -97,16 +97,16 @@ function Hero() {
       <div className="pointer-events-none absolute inset-0 z-0">
         <BackgroundScene />
       </div>
-      <div className="relative z-10 mx-auto grid min-h-[100vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-32 lg:grid-cols-2">
+      <div className="relative z-10 mx-auto grid min-h-[80vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-20 lg:grid-cols-2">
         <div className="relative">
           <div className="relative">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-brand-foreground/70">
             Nanotecnologia automotiva
           </p>
-          <h1 className="font-display text-5xl font-extrabold leading-[1.05] md:text-7xl">
+          <h1 className="font-display text-4xl font-extrabold leading-[1.05] md:text-6xl">
             GRAFENO <span className="block text-brand">COAT</span>
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-foreground/85 md:text-lg">
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-foreground/85">
             Uma evolução dos sistemas de proteção de pintura automotiva, com nano partículas
             e moléculas que proporcionam maior nível de resistência, aumentando a intensidade
             do brilho e melhorando a profundidade de cor com uma incrível sensação ao toque.
@@ -120,7 +120,7 @@ function Hero() {
           <img
             src={grafenoBottle}
             alt="Frasco Grafeno Coat 30ml"
-            className="relative z-10 mx-auto w-full max-w-md drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+            className="relative z-10 mx-auto w-full max-w-xs drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] md:max-w-sm"
           />
           <div className="absolute -inset-10 -z-0 rounded-full bg-brand/30 blur-3xl" />
         </div>
