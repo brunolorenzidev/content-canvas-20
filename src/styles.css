@@ -65,6 +65,7 @@
   --color-brand-dark: var(--brand-dark);
   --color-ink: var(--ink);
   --font-display: "Inter", system-ui, sans-serif;
+  --animate-aurora: aurora 60s linear infinite;
 }
 
 :root {
