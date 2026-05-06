@@ -10,7 +10,7 @@ import grafenoBottle from "@/assets/grafeno-bottle.png";
 import grafenoProduct from "@/assets/grafeno-product.png";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
-import productsLineup from "@/assets/products-lineup.jpg";
+import productsLineup from "@/assets/products-lineup-v2.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
