@@ -7,6 +7,7 @@ import { ShinyButton } from "@/components/ui/shiny-button";
 import { WaterRippleImage } from "@/components/ui/water-ripple-image";
 import { TiltCard } from "@/components/ui/tilt-card";
 import { BorderBeam } from "@/components/ui/border-beam";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
 import grafenoBottle from "@/assets/grafeno-bottle.png";
 import grafenoProduct from "@/assets/grafeno-product-v2.png";
@@ -251,9 +252,10 @@ function ManualSection() {
 function CeramicVsGraphene() {
   const [open, setOpen] = useState(false);
   return (
-    <section className="relative overflow-hidden bg-background py-28 text-foreground">
-      <div className="mx-auto max-w-6xl px-8 text-center">
-        <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground">Revestimento</p>
+    <section className="relative overflow-hidden text-brand-foreground" style={{ background: "var(--gradient-brand)" }}>
+      <AuroraBackground showRadialGradient className="!h-auto !bg-transparent py-28">
+      <div className="relative z-10 mx-auto max-w-6xl px-8 text-center">
+        <p className="text-sm uppercase tracking-[0.3em] text-brand-foreground/70">Revestimento</p>
         <h2 className="mt-3 font-display text-5xl font-light text-brand md:text-6xl">
           Cerâmico vs Grafeno
         </h2>
