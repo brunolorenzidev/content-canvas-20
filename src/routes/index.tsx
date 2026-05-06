@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Instagram, ChevronUp, Check } from "lucide-react";
+import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Instagram, ChevronUp, Check, Play, X } from "lucide-react";
+import { useState } from "react";
 import { MarqueeBanner } from "@/components/MarqueeBanner";
 import BackgroundScene from "@/components/ui/aurora-section-hero";
 import { ShinyButton } from "@/components/ui/shiny-button";
@@ -10,7 +11,7 @@ import grafenoBottle from "@/assets/grafeno-bottle.png";
 import grafenoProduct from "@/assets/grafeno-product.png";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
-import productsLineup from "@/assets/products-lineup.jpg";
+import productsLineup from "@/assets/products-lineup-v2.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -244,6 +245,66 @@ function ManualSection() {
   );
 }
 
+function CeramicVsGraphene() {
+  const [open, setOpen] = useState(false);
+  return (
+    <section className="relative overflow-hidden bg-background py-28 text-foreground">
+      <div className="mx-auto max-w-6xl px-8 text-center">
+        <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground">Revestimento</p>
+        <h2 className="mt-3 font-display text-5xl font-light text-brand md:text-6xl">
+          Cerâmico vs Grafeno
+        </h2>
+
+        <div className="mt-12 grid grid-cols-1 gap-10 text-left md:grid-cols-1">
+          <p className="text-muted-foreground">
+            No seguimento de estética automotiva o SiO2 tornou-se sinônimo de cerâmica. Revestimento cerâmico em sua definição são tratamentos dados a superfícies de veículos com produtos que tem em sua formulação a base de matéria inorgânica. O grafeno é carbono, ou seja, uma matéria orgânica que utiliza estrutura química de óxido de grafeno, e para que seja um revestimento ideal é acrescentado materiais inorgânicos, desta forma, o grafeno não pode ser classificado como um revestimento cerâmico, e sim, como um revestimento híbrido (carbono cerâmico) ou simplesmente revestimento de grafeno.
+          </p>
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+            <p className="text-muted-foreground">
+              Os revestimentos de grafeno podem ser considerados uma evolução dos revestimentos cerâmicos no sentido de que é utilizado elementos químicos oxidativos e inorgânicos retirados da cerâmica para unir uma camada de grafeno inerte e não reativa a qualquer superfície e/ou substrato, dessa forma, o revestimento de grafeno é formado por carbono modificado, os revestimentos cerâmicos são formados por nanopartículas de dióxido de silício e/ou titânio.
+            </p>
+            <p className="text-muted-foreground">
+              Embora próximos na tabela periódica, o carbono, o silício e o titânio são substâncias totalmente diferentes, mas que compartilham muitas características e semelhanças, e a nível molecular se combinam o que faz funcionar muito bem sobre as manutenções para manter revestimento à base de grafeno utilizando produtos químicos com base de SiO2 e/ou TiO2.
+            </p>
+          </div>
+        </div>
+
+        <button
+          onClick={() => setOpen(true)}
+          aria-label="Reproduzir vídeo"
+          className="mt-16 inline-grid size-20 place-items-center rounded-full bg-brand text-brand-foreground shadow-lg transition-transform hover:scale-110"
+        >
+          <Play className="size-8 fill-current" />
+        </button>
+      </div>
+
+      {open && (
+        <div
+          className="fixed inset-0 z-50 grid place-items-center bg-black/80 p-4"
+          onClick={() => setOpen(false)}
+        >
+          <button
+            onClick={() => setOpen(false)}
+            className="absolute right-6 top-6 grid size-10 place-items-center rounded-full bg-white/10 text-white hover:bg-white/20"
+            aria-label="Fechar"
+          >
+            <X className="size-5" />
+          </button>
+          <div className="relative w-full max-w-4xl aspect-video" onClick={(e) => e.stopPropagation()}>
+            <iframe
+              className="h-full w-full rounded-xl"
+              src="https://www.youtube.com/embed/XoM6LmwfRfo?autoplay=1"
+              title="Cerâmico vs Grafeno"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
+    </section>
+  );
+}
+
 function ExclusiveSection() {
   return (
     <section className="bg-background py-28">
@@ -347,6 +408,7 @@ function Index() {
       <BenefitsDark />
       <TechSection />
       <ManualSection />
+      <CeramicVsGraphene />
       <ExclusiveSection />
       <ResellerCTA />
       <Footer />
