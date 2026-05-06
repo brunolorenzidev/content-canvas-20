@@ -227,7 +227,9 @@ function TechSection() {
             <ShinyButton>SAIBA MAIS</ShinyButton>
           </div>
         </div>
-        <img src={grapheneDiagram} alt="Diagrama de oxidação do grafeno" loading="lazy" className="rounded-2xl shadow-xl" />
+        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-xl bg-black">
+          <WaterRippleImage src={grapheneProcess} />
+        </div>
       </div>
     </section>
   );
