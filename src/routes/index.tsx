@@ -261,14 +261,14 @@ function CeramicVsGraphene() {
         </h2>
 
         <div className="mt-12 grid grid-cols-1 gap-10 text-left md:grid-cols-1">
-          <p className="text-muted-foreground">
+          <p className="text-brand-foreground/85">
             No seguimento de estética automotiva o SiO2 tornou-se sinônimo de cerâmica. Revestimento cerâmico em sua definição são tratamentos dados a superfícies de veículos com produtos que tem em sua formulação a base de matéria inorgânica. O grafeno é carbono, ou seja, uma matéria orgânica que utiliza estrutura química de óxido de grafeno, e para que seja um revestimento ideal é acrescentado materiais inorgânicos, desta forma, o grafeno não pode ser classificado como um revestimento cerâmico, e sim, como um revestimento híbrido (carbono cerâmico) ou simplesmente revestimento de grafeno.
           </p>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-            <p className="text-muted-foreground">
+            <p className="text-brand-foreground/85">
               Os revestimentos de grafeno podem ser considerados uma evolução dos revestimentos cerâmicos no sentido de que é utilizado elementos químicos oxidativos e inorgânicos retirados da cerâmica para unir uma camada de grafeno inerte e não reativa a qualquer superfície e/ou substrato, dessa forma, o revestimento de grafeno é formado por carbono modificado, os revestimentos cerâmicos são formados por nanopartículas de dióxido de silício e/ou titânio.
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-brand-foreground/85">
               Embora próximos na tabela periódica, o carbono, o silício e o titânio são substâncias totalmente diferentes, mas que compartilham muitas características e semelhanças, e a nível molecular se combinam o que faz funcionar muito bem sobre as manutenções para manter revestimento à base de grafeno utilizando produtos químicos com base de SiO2 e/ou TiO2.
             </p>
           </div>
