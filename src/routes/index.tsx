@@ -408,6 +408,7 @@ function Index() {
       <BenefitsDark />
       <TechSection />
       <ManualSection />
+      <CeramicVsGraphene />
       <ExclusiveSection />
       <ResellerCTA />
       <Footer />
