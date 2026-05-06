@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Instagram, ChevronUp, Check } from "lucide-react";
 import { MarqueeBanner } from "@/components/MarqueeBanner";
-import { SmokeBackground } from "@/components/ui/spooky-smoke-animation";
+import BackgroundScene from "@/components/ui/aurora-section-hero";
 import heroCar from "@/assets/hero-car.jpg";
 import grafenoProduct from "@/assets/grafeno-product.png";
 import grafenoLogo from "@/assets/grafeno-logo.png";
