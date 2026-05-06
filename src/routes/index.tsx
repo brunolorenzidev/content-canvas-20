@@ -97,16 +97,16 @@ function Hero() {
       <div className="pointer-events-none absolute inset-0 z-0">
         <BackgroundScene />
       </div>
-      <div className="relative z-10 mx-auto grid min-h-[100vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-32 lg:grid-cols-2">
+      <div className="relative z-10 mx-auto grid min-h-[80vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-20 lg:grid-cols-2">
         <div className="relative">
           <div className="relative">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-brand-foreground/70">
             Nanotecnologia automotiva
           </p>
-          <h1 className="font-display text-5xl font-extrabold leading-[1.05] md:text-7xl">
+          <h1 className="font-display text-4xl font-extrabold leading-[1.05] md:text-6xl">
             GRAFENO <span className="block text-brand">COAT</span>
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-foreground/85 md:text-lg">
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-foreground/85">
             Uma evolução dos sistemas de proteção de pintura automotiva, com nano partículas
             e moléculas que proporcionam maior nível de resistência, aumentando a intensidade
             do brilho e melhorando a profundidade de cor com uma incrível sensação ao toque.
@@ -120,7 +120,7 @@ function Hero() {
           <img
             src={grafenoBottle}
             alt="Frasco Grafeno Coat 30ml"
-            className="relative z-10 mx-auto w-full max-w-md drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+            className="relative z-10 mx-auto w-full max-w-xs drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] md:max-w-sm"
           />
           <div className="absolute -inset-10 -z-0 rounded-full bg-brand/30 blur-3xl" />
         </div>
@@ -223,7 +223,7 @@ function TechSection() {
             </p>
           </div>
           <div className="mt-8">
-            <ChevronButton variant="solid">Saiba mais</ChevronButton>
+            <ShinyButton>SAIBA MAIS</ShinyButton>
           </div>
         </div>
         <img src={grapheneDiagram} alt="Diagrama de oxidação do grafeno" loading="lazy" className="rounded-2xl shadow-xl" />
@@ -241,11 +241,7 @@ function ManualSection() {
           Disponibilizamos um manual completo para o uso correto do produto.
         </p>
         <div className="mt-10 inline-block">
-          <button
-            className="inline-flex items-center gap-3 rounded-full border border-brand-foreground/40 px-8 py-4 text-sm font-semibold uppercase tracking-wide hover:bg-brand-foreground/10"
-          >
-            <Download className="size-4" /> Baixar o manual completo
-          </button>
+          <ShinyButton>BAIXAR O MANUAL COMPLETO</ShinyButton>
         </div>
       </div>
     </section>
@@ -268,7 +264,7 @@ function ExclusiveSection() {
             proteção duradoura e proporcionando um melhor acabamento aos serviços de estética automotiva.
           </p>
           <div className="mt-8">
-            <ChevronButton variant="solid">Conheça a linha</ChevronButton>
+            <ShinyButton>CONHEÇA A LINHA</ShinyButton>
           </div>
         </div>
       </div>
@@ -278,11 +274,9 @@ function ExclusiveSection() {
 
 function ResellerCTA() {
   return (
-    <section className="bg-brand py-12 text-brand-foreground">
+    <section className="bg-brand-dark py-12 text-brand-foreground">
       <div className="mx-auto flex max-w-5xl items-center justify-center px-8">
-        <button className="inline-flex items-center gap-3 rounded-full border-2 border-brand-foreground px-10 py-4 text-sm font-bold uppercase tracking-wider hover:bg-brand-foreground hover:text-brand">
-          <Headphones className="size-5" /> Ser Revendedor
-        </button>
+        <ShinyButton>SER REVENDEDOR</ShinyButton>
       </div>
     </section>
   );
