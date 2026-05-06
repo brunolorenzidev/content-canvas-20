@@ -4,11 +4,12 @@ import { MarqueeBanner } from "@/components/MarqueeBanner";
 import BackgroundScene from "@/components/ui/aurora-section-hero";
 import { ShinyButton } from "@/components/ui/shiny-button";
 import { WaterRippleImage } from "@/components/ui/water-ripple-image";
+import { TiltCard } from "@/components/ui/tilt-card";
 import grafenoBottle from "@/assets/grafeno-bottle.png";
 import grafenoProduct from "@/assets/grafeno-product.png";
 import grafenoLogo from "@/assets/grafeno-logo.png";
-import grapheneProcess from "@/assets/graphene-process.png";
-import productsLineup from "@/assets/products-lineup.jpg";
+import grapheneProcess from "@/assets/graphene-process-transparent.png";
+import productsLineup from "@/assets/products-lineup-transparent.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -206,12 +207,12 @@ function BenefitsDark() {
 
 function TechSection() {
   return (
-    <section id="tecnologia" className="bg-background py-28">
+    <section id="tecnologia" className="relative overflow-hidden py-28 text-brand-foreground" style={{ background: "var(--gradient-brand)" }}>
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-8 lg:grid-cols-2">
         <div>
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-brand">Nanotecnologia</p>
-          <h2 className="font-display text-5xl font-light text-foreground">Característica técnica</h2>
-          <div className="mt-6 space-y-4 text-muted-foreground">
+          <h2 className="font-display text-5xl font-light">Característica técnica</h2>
+          <div className="mt-6 space-y-4 text-brand-foreground/85">
             <p>
               Por ser um material quimicamente não reativo e inerte, o grafeno não tem função
               aderente e por si só não pode formar um revestimento que proporcione longa duração,
@@ -227,7 +228,7 @@ function TechSection() {
             <ShinyButton>SAIBA MAIS</ShinyButton>
           </div>
         </div>
-        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-xl bg-black">
+        <div className="relative aspect-[4/3] w-full scale-110">
           <WaterRippleImage src={grapheneProcess} />
         </div>
       </div>
@@ -255,7 +256,9 @@ function ExclusiveSection() {
   return (
     <section className="bg-background py-28">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-8 lg:grid-cols-2">
-        <img src={productsLineup} alt="Linha Alcance Profissional" loading="lazy" className="rounded-2xl" />
+        <TiltCard className="w-full" tiltLimit={12} scale={1.04} effect="evade" spotlight>
+          <img src={productsLineup} alt="Linha Alcance Profissional" loading="lazy" className="w-full h-auto" />
+        </TiltCard>
         <div>
           <h2 className="font-display text-5xl font-light text-foreground">
             Produto Exclusivo <span className="block font-bold">Alcance Profissional</span>
