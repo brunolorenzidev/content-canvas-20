@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Instagram, ChevronUp, Check } from "lucide-react";
+import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Instagram, ChevronUp, Check, Play, X } from "lucide-react";
+import { useState } from "react";
 import { MarqueeBanner } from "@/components/MarqueeBanner";
 import BackgroundScene from "@/components/ui/aurora-section-hero";
 import { ShinyButton } from "@/components/ui/shiny-button";
