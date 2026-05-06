@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Instagram, ChevronUp, Check } from "lucide-react";
 import { MarqueeBanner } from "@/components/MarqueeBanner";
-import { SmokeBackground } from "@/components/ui/spooky-smoke-animation";
+import BackgroundScene from "@/components/ui/aurora-section-hero";
 import heroCar from "@/assets/hero-car.jpg";
 import grafenoProduct from "@/assets/grafeno-product.png";
 import grafenoLogo from "@/assets/grafeno-logo.png";
@@ -83,9 +83,8 @@ function Header() {
           <a href="#manual" className="hover:text-brand-foreground">Manual</a>
           <a href="#contato" className="hover:text-brand-foreground">Contato</a>
         </nav>
-        <div className="text-brand-foreground">
-          <ChevronButton variant="outline">Ser Revendedor</ChevronButton>
-        </div>
+        <div />
+
       </div>
     </header>
   );
@@ -95,7 +94,7 @@ function Hero() {
   return (
     <section className="relative overflow-hidden text-brand-foreground" style={{ background: "var(--gradient-brand)" }}>
       <div className="pointer-events-none absolute inset-0 z-0">
-        <SmokeBackground smokeColor="#00FF55" />
+        <BackgroundScene />
       </div>
       <div className="relative z-10 mx-auto grid min-h-[100vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-32 lg:grid-cols-2">
         <div className="relative">
@@ -358,7 +357,7 @@ function Index() {
       <ExclusiveSection />
       <ResellerCTA />
       <Footer />
-      <SideTab />
+      
       <ScrollTop />
     </main>
   );

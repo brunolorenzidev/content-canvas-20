@@ -71,20 +71,20 @@
   --radius: 0.5rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.15 0.02 340);
-  --brand: oklch(0.55 0.22 350);
+  --brand: oklch(0.78 0.23 145);
   --brand-foreground: oklch(0.99 0 0);
-  --brand-deep: oklch(0.28 0.13 350);
-  --brand-dark: oklch(0.18 0.06 340);
-  --ink: oklch(0.18 0.02 340);
-  --gradient-brand: linear-gradient(135deg, oklch(0.28 0.13 350) 0%, oklch(0.18 0.06 340) 60%, oklch(0.12 0.04 340) 100%);
-  --gradient-brand-soft: linear-gradient(135deg, oklch(0.55 0.22 350) 0%, oklch(0.38 0.18 350) 100%);
-  --shadow-brand: 0 20px 60px -20px oklch(0.55 0.22 350 / 0.45);
+  --brand-deep: oklch(0.32 0.12 150);
+  --brand-dark: oklch(0.16 0.05 150);
+  --ink: oklch(0.16 0.04 150);
+  --gradient-brand: linear-gradient(135deg, oklch(0.22 0.08 150) 0%, oklch(0.14 0.05 150) 60%, oklch(0.08 0.03 150) 100%);
+  --gradient-brand-soft: linear-gradient(135deg, oklch(0.78 0.23 145) 0%, oklch(0.55 0.18 145) 100%);
+  --shadow-brand: 0 20px 60px -20px oklch(0.78 0.23 145 / 0.45);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.55 0.22 350);
-  --primary-foreground: oklch(0.99 0 0);
+  --primary: oklch(0.78 0.23 145);
+  --primary-foreground: oklch(0.15 0.05 150);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
@@ -155,4 +155,27 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+}
+
+/* Aurora hero scene */
+@keyframes rise {
+  0% { transform: translateY(100%); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(-10%); opacity: 0; }
+}
+@keyframes fade {
+  0%, 100% { opacity: 0; }
+  5%, 80% { opacity: 0.7; }
+}
+@keyframes floorGlow {
+  0%, 100% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+@keyframes mainGlow {
+  from { opacity: 0.6; filter: blur(25px); }
+  to { opacity: 0.8; filter: blur(15px); }
+}
+@keyframes moveGrid {
+  from { background-position: 0 0; }
+  to { background-position: -80px -40px; }
 }
