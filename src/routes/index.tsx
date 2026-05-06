@@ -274,11 +274,9 @@ function ExclusiveSection() {
 
 function ResellerCTA() {
   return (
-    <section className="bg-brand py-12 text-brand-foreground">
+    <section className="bg-brand-dark py-12 text-brand-foreground">
       <div className="mx-auto flex max-w-5xl items-center justify-center px-8">
-        <button className="inline-flex items-center gap-3 rounded-full border-2 border-brand-foreground px-10 py-4 text-sm font-bold uppercase tracking-wider hover:bg-brand-foreground hover:text-brand">
-          <Headphones className="size-5" /> Ser Revendedor
-        </button>
+        <ShinyButton>SER REVENDEDOR</ShinyButton>
       </div>
     </section>
   );
