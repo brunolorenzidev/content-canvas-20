@@ -264,7 +264,7 @@ function ExclusiveSection() {
             proteção duradoura e proporcionando um melhor acabamento aos serviços de estética automotiva.
           </p>
           <div className="mt-8">
-            <ChevronButton variant="solid">Conheça a linha</ChevronButton>
+            <ShinyButton>CONHEÇA A LINHA</ShinyButton>
           </div>
         </div>
       </div>
