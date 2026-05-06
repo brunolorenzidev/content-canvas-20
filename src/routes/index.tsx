@@ -357,7 +357,7 @@ function Index() {
       <ExclusiveSection />
       <ResellerCTA />
       <Footer />
-      <SideTab />
+      
       <ScrollTop />
     </main>
   );
