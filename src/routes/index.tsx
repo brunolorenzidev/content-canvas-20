@@ -241,11 +241,7 @@ function ManualSection() {
           Disponibilizamos um manual completo para o uso correto do produto.
         </p>
         <div className="mt-10 inline-block">
-          <button
-            className="inline-flex items-center gap-3 rounded-full border border-brand-foreground/40 px-8 py-4 text-sm font-semibold uppercase tracking-wide hover:bg-brand-foreground/10"
-          >
-            <Download className="size-4" /> Baixar o manual completo
-          </button>
+          <ShinyButton>BAIXAR O MANUAL COMPLETO</ShinyButton>
         </div>
       </div>
     </section>
