@@ -223,7 +223,7 @@ function TechSection() {
             </p>
           </div>
           <div className="mt-8">
-            <ChevronButton variant="solid">Saiba mais</ChevronButton>
+            <ShinyButton>SAIBA MAIS</ShinyButton>
           </div>
         </div>
         <img src={grapheneDiagram} alt="Diagrama de oxidação do grafeno" loading="lazy" className="rounded-2xl shadow-xl" />
