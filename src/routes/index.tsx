@@ -3,10 +3,11 @@ import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Ins
 import { MarqueeBanner } from "@/components/MarqueeBanner";
 import BackgroundScene from "@/components/ui/aurora-section-hero";
 import { ShinyButton } from "@/components/ui/shiny-button";
+import { WaterRippleImage } from "@/components/ui/water-ripple-image";
 import grafenoBottle from "@/assets/grafeno-bottle.png";
 import grafenoProduct from "@/assets/grafeno-product.png";
 import grafenoLogo from "@/assets/grafeno-logo.png";
-import grapheneDiagram from "@/assets/graphene-diagram.jpg";
+import grapheneProcess from "@/assets/graphene-process.png";
 import productsLineup from "@/assets/products-lineup.jpg";
 
 export const Route = createFileRoute("/")({
