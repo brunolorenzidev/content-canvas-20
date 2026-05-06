@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Instagram, ChevronUp, Check, Play, X } from "lucide-react";
 import { useState } from "react";
 import { MarqueeBanner } from "@/components/MarqueeBanner";
-import BackgroundScene from "@/components/ui/aurora-section-hero";
+import ParticlesComponent from "@/components/ui/particles-bg";
 import { ShinyButton } from "@/components/ui/shiny-button";
 import { WaterRippleImage } from "@/components/ui/water-ripple-image";
 import { TiltCard } from "@/components/ui/tilt-card";
