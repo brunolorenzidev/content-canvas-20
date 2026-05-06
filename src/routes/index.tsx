@@ -83,9 +83,8 @@ function Header() {
           <a href="#manual" className="hover:text-brand-foreground">Manual</a>
           <a href="#contato" className="hover:text-brand-foreground">Contato</a>
         </nav>
-        <div className="text-brand-foreground">
-          <ChevronButton variant="outline">Ser Revendedor</ChevronButton>
-        </div>
+        <div />
+
       </div>
     </header>
   );
