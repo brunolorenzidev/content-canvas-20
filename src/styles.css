@@ -281,3 +281,12 @@
 @keyframes gradient-angle { to { --gradient-angle: 360deg; } }
 @keyframes shimmer { to { rotate: 360deg; } }
 @keyframes breathe { from, to { scale: 1; } 50% { scale: 1.2; } }
+
+/* Benefits carousel */
+@keyframes benefits-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-benefits-scroll {
+  animation: benefits-scroll 30s linear infinite;
+}
