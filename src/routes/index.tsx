@@ -282,6 +282,7 @@ function CeramicVsGraphene() {
           <Play className="size-8 fill-current" />
         </button>
       </div>
+      </AuroraBackground>
 
       {open && (
         <div
