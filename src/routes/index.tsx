@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Instagram, ChevronUp, Check } from "lucide-react";
 import { MarqueeBanner } from "@/components/MarqueeBanner";
 import BackgroundScene from "@/components/ui/aurora-section-hero";
-import heroCar from "@/assets/hero-car.jpg";
+import { ShinyButton } from "@/components/ui/shiny-button";
+import grafenoBottle from "@/assets/grafeno-bottle.png";
 import grafenoProduct from "@/assets/grafeno-product.png";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneDiagram from "@/assets/graphene-diagram.jpg";
@@ -111,15 +112,15 @@ function Hero() {
             do brilho e melhorando a profundidade de cor com uma incrível sensação ao toque.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <ChevronButton variant="brand">Saiba como revender</ChevronButton>
+            <ShinyButton>SAIBA COMO REVENDER</ShinyButton>
           </div>
           </div>
         </div>
         <div className="relative">
           <img
-            src={grafenoProduct}
-            alt="Embalagens e frasco Grafeno Coat"
-            className="relative z-10 mx-auto w-full max-w-lg drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+            src={grafenoBottle}
+            alt="Frasco Grafeno Coat 30ml"
+            className="relative z-10 mx-auto w-full max-w-md drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
           />
           <div className="absolute -inset-10 -z-0 rounded-full bg-brand/30 blur-3xl" />
         </div>
