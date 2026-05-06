@@ -284,10 +284,20 @@
 
 /* Border beam */
 @keyframes border-beam {
+  0% { offset-distance: 0%; }
   100% { offset-distance: 100%; }
 }
 .animate-border-beam {
   animation: border-beam calc(var(--duration) * 1s) infinite linear;
+}
+
+/* Aurora */
+@keyframes aurora {
+  from { background-position: 50% 50%, 50% 50%; }
+  to { background-position: 350% 50%, 350% 50%; }
+}
+.animate-aurora {
+  animation: aurora 60s linear infinite;
 }
 
 /* Benefits carousel */
