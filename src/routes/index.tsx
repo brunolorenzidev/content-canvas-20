@@ -5,11 +5,12 @@ import BackgroundScene from "@/components/ui/aurora-section-hero";
 import { ShinyButton } from "@/components/ui/shiny-button";
 import { WaterRippleImage } from "@/components/ui/water-ripple-image";
 import { TiltCard } from "@/components/ui/tilt-card";
+import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
 import grafenoBottle from "@/assets/grafeno-bottle.png";
 import grafenoProduct from "@/assets/grafeno-product.png";
 import grafenoLogo from "@/assets/grafeno-logo.png";
-import grapheneProcess from "@/assets/graphene-process-transparent.png";
-import productsLineup from "@/assets/products-lineup-transparent.png";
+import grapheneProcess from "@/assets/graphene-process.png";
+import productsLineup from "@/assets/products-lineup.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -188,17 +189,8 @@ function BenefitsDark() {
           assunto é estética veicular.
         </p>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3">
-          {[
-            { t: "Hidrofobia Extrema", d: "Repele água, óleo e contaminantes mantendo o veículo limpo por mais tempo." },
-            { t: "Dureza 9H", d: "Superfície altamente resistente a microriscos e abrasões do dia a dia." },
-            { t: "Brilho Profundo", d: "Realce de cor e profundidade visual com sensação aveludada ao toque." },
-          ].map((b) => (
-            <div key={b.t} className="rounded-2xl border border-brand-foreground/10 bg-brand-foreground/5 p-8 text-left backdrop-blur">
-              <h3 className="font-display text-xl font-bold text-brand-foreground">{b.t}</h3>
-              <p className="mt-3 text-sm text-brand-foreground/80">{b.d}</p>
-            </div>
-          ))}
+        <div className="mt-16">
+          <BenefitsCarousel />
         </div>
       </div>
     </section>
