@@ -10,7 +10,7 @@ import { BorderBeam } from "@/components/ui/border-beam";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
 import grafenoBottle from "@/assets/grafeno-bottle.png";
-import grafenoProduct from "@/assets/grafeno-product.gif";
+import grafenoProduct from "@/assets/grafeno-product-white.gif";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
 import productsLineup from "@/assets/products-lineup-v3.png";
