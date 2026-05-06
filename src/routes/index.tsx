@@ -6,9 +6,10 @@ import BackgroundScene from "@/components/ui/aurora-section-hero";
 import { ShinyButton } from "@/components/ui/shiny-button";
 import { WaterRippleImage } from "@/components/ui/water-ripple-image";
 import { TiltCard } from "@/components/ui/tilt-card";
+import { BorderBeam } from "@/components/ui/border-beam";
 import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
 import grafenoBottle from "@/assets/grafeno-bottle.png";
-import grafenoProduct from "@/assets/grafeno-product.png";
+import grafenoProduct from "@/assets/grafeno-product-v2.png";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
 import productsLineup from "@/assets/products-lineup-v2.png";
@@ -162,7 +163,9 @@ function ProductSection() {
             loading="lazy"
             className="mx-auto w-full max-w-md"
           />
-          <div className="rounded-3xl border bg-card p-10 shadow-sm">
+          <div className="relative overflow-hidden rounded-3xl border bg-card p-10 shadow-sm">
+            <BorderBeam size={250} duration={12} colorFrom="#4ade80" colorTo="#065f46" />
+            <BorderBeam size={250} duration={12} delay={6} colorFrom="#22c55e" colorTo="#86efac" />
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               {items.map((it) => (
                 <div key={it} className="text-left">

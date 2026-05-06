@@ -282,6 +282,14 @@
 @keyframes shimmer { to { rotate: 360deg; } }
 @keyframes breathe { from, to { scale: 1; } 50% { scale: 1.2; } }
 
+/* Border beam */
+@keyframes border-beam {
+  100% { offset-distance: 100%; }
+}
+.animate-border-beam {
+  animation: border-beam calc(var(--duration) * 1s) infinite linear;
+}
+
 /* Benefits carousel */
 @keyframes benefits-scroll {
   from { transform: translateX(0); }
