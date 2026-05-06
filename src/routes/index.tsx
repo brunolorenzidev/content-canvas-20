@@ -95,7 +95,7 @@ function Hero() {
   return (
     <section className="relative overflow-hidden text-brand-foreground" style={{ background: "var(--gradient-brand)" }}>
       <div className="pointer-events-none absolute inset-0 z-0">
-        <SmokeBackground smokeColor="#00FF55" />
+        <BackgroundScene />
       </div>
       <div className="relative z-10 mx-auto grid min-h-[100vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-32 lg:grid-cols-2">
         <div className="relative">
