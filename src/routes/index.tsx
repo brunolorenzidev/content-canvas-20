@@ -9,7 +9,7 @@ import { TiltCard } from "@/components/ui/tilt-card";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
-import grafenoBottle from "@/assets/grafeno-bottle.mp4";
+import grafenoBottle from "@/assets/grafeno-bottle-loop.mp4";
 import grafenoProduct from "@/assets/grafeno-product-white.gif";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
