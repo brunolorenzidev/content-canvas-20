@@ -129,6 +129,7 @@ function Hero() {
             loop
             muted
             playsInline
+            style={{ mixBlendMode: "screen" }}
             className="relative z-10 mx-auto w-full max-w-xs drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] md:max-w-sm"
           />
           <div className="absolute -inset-10 -z-0 rounded-full bg-brand/30 blur-3xl" />
