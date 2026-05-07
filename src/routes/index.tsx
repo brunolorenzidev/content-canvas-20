@@ -99,7 +99,7 @@ function Header() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden text-brand-foreground" style={{ background: "var(--gradient-brand)" }}>
+    <section className="relative overflow-hidden text-brand-foreground bg-black">
       <div className="pointer-events-none absolute inset-0 z-0">
         <ParticlesComponent />
       </div>
@@ -129,10 +129,9 @@ function Hero() {
             loop
             muted
             playsInline
-            style={{ mixBlendMode: "lighten" }}
             className="relative z-10 mx-auto w-full max-w-xs drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] md:max-w-sm"
           />
-          <div className="absolute -inset-10 -z-0 rounded-full bg-brand/30 blur-3xl" />
+          <div className="absolute -inset-10 -z-0 rounded-full bg-brand/20 blur-3xl" />
         </div>
       </div>
     </section>
