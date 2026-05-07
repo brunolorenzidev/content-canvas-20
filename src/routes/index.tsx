@@ -100,7 +100,7 @@ function Header() {
 function Hero() {
   return (
     <section className="relative overflow-hidden text-brand-foreground bg-black">
-      <div className="pointer-events-none absolute inset-0 z-0">
+      <div className="pointer-events-none absolute inset-0 z-20">
         <ParticlesComponent />
       </div>
       <div className="relative z-10 mx-auto grid min-h-[80vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-20 lg:grid-cols-2">
@@ -129,9 +129,8 @@ function Hero() {
             loop
             muted
             playsInline
-            className="relative z-10 mx-auto w-full max-w-xs drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] md:max-w-sm"
+            className="relative z-10 mx-auto w-full max-w-xs md:max-w-sm"
           />
-          <div className="absolute -inset-10 -z-0 rounded-full bg-brand/20 blur-3xl" />
         </div>
       </div>
     </section>
