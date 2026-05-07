@@ -10,7 +10,7 @@ import { BorderBeam } from "@/components/ui/border-beam";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
 import grafenoBottle from "@/assets/grafeno-bottle-loop-original.mp4";
-import grafenoProduct from "@/assets/grafeno-product-white.gif";
+import grafenoProduct from "@/assets/grafeno-product-loop.webm";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
 import productsLineup from "@/assets/products-lineup-v3.png";
@@ -160,11 +160,13 @@ function ProductSection() {
         </p>
 
         <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <img
+          <video
             src={grafenoProduct}
-            alt="Grafeno Coat produto"
-            loading="lazy"
-            className="mx-auto w-full max-w-md"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="mx-auto w-full max-w-sm"
           />
           <div className="relative overflow-hidden rounded-3xl border bg-card p-10 shadow-sm">
             <BorderBeam size={250} duration={12} colorFrom="#4ade80" colorTo="#065f46" />
