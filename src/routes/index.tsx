@@ -9,7 +9,7 @@ import { TiltCard } from "@/components/ui/tilt-card";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
-import grafenoBottle from "@/assets/grafeno-bottle.gif";
+import grafenoBottle from "@/assets/grafeno-bottle.mp4";
 import grafenoProduct from "@/assets/grafeno-product-white.gif";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
@@ -123,9 +123,12 @@ function Hero() {
           </div>
         </div>
         <div className="relative">
-          <img
+          <video
             src={grafenoBottle}
-            alt="Frasco Grafeno Coat 30ml"
+            autoPlay
+            loop
+            muted
+            playsInline
             className="relative z-10 mx-auto w-full max-w-xs drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] md:max-w-sm"
           />
           <div className="absolute -inset-10 -z-0 rounded-full bg-brand/30 blur-3xl" />
