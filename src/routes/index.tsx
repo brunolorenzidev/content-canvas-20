@@ -9,7 +9,7 @@ import { TiltCard } from "@/components/ui/tilt-card";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
-import grafenoBottle from "@/assets/grafeno-bottle-loop.mp4";
+import grafenoBottle from "@/assets/grafeno-bottle-loop-original.mp4";
 import grafenoProduct from "@/assets/grafeno-product-white.gif";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
@@ -129,7 +129,7 @@ function Hero() {
             loop
             muted
             playsInline
-            style={{ mixBlendMode: "screen" }}
+            style={{ mixBlendMode: "lighten" }}
             className="relative z-10 mx-auto w-full max-w-xs drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] md:max-w-sm"
           />
           <div className="absolute -inset-10 -z-0 rounded-full bg-brand/30 blur-3xl" />
