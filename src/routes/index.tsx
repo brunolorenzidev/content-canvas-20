@@ -4,13 +4,13 @@ import { useState } from "react";
 import { MarqueeBanner } from "@/components/MarqueeBanner";
 import ParticlesComponent from "@/components/ui/particles-bg";
 import { ShinyButton } from "@/components/ui/shiny-button";
-import { WaterRippleImage } from "@/components/ui/water-ripple-image";
+import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { TiltCard } from "@/components/ui/tilt-card";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
 import grafenoBottle from "@/assets/grafeno-bottle-loop-original.mp4";
-import grafenoProduct from "@/assets/grafeno-product-loop.webm";
+import grafenoProduct from "@/assets/grafeno-product-new.gif";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
 import productsLineup from "@/assets/products-lineup-v3.png";
@@ -118,7 +118,7 @@ function Hero() {
             do brilho e melhorando a profundidade de cor com uma incrível sensação ao toque.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <ShinyButton>SAIBA COMO REVENDER</ShinyButton>
+            <ShinyButton href="https://wa.me/554188206718?text=Ol%C3%A1!%20Vim%20pelo%20site%20Grafeno%20Coat" target="_blank" rel="noopener noreferrer">SAIBA COMO REVENDER</ShinyButton>
           </div>
           </div>
         </div>
@@ -160,12 +160,9 @@ function ProductSection() {
         </p>
 
         <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <video
+          <img
             src={grafenoProduct}
-            autoPlay
-            loop
-            muted
-            playsInline
+            alt="Grafeno Coat"
             className="mx-auto w-full max-w-sm"
           />
           <div className="relative overflow-hidden rounded-3xl border bg-card p-10 shadow-sm">
@@ -229,8 +226,10 @@ function TechSection() {
             <ShinyButton>SAIBA MAIS</ShinyButton>
           </div>
         </div>
-        <div className="relative aspect-[4/3] w-full scale-110">
-          <WaterRippleImage src={grapheneProcess} />
+        <div className="relative w-full">
+          <ContainerScroll titleComponent={null}>
+            <img src={grapheneProcess} alt="Processo de grafeno" className="mx-auto w-full h-auto object-contain" />
+          </ContainerScroll>
         </div>
       </div>
     </section>
