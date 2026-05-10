@@ -147,7 +147,7 @@ function ProductSection() {
     "5 Anos De Garantia Comprovada Em Pintura Automotiva",
   ];
   return (
-    <section id="produto" className="relative bg-background py-28">
+    <section id="produto" className="relative py-28" style={{ backgroundColor: "#E5E5E5" }}>
       <div className="mx-auto max-w-7xl px-8 text-center">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-brand">Conheça o produto</p>
         <h2 className="font-display text-4xl font-light text-foreground md:text-5xl">
@@ -160,9 +160,12 @@ function ProductSection() {
         </p>
 
         <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <img
+          <video
             src={grafenoProduct}
-            alt="Grafeno Coat"
+            autoPlay
+            loop
+            muted
+            playsInline
             className="mx-auto w-full max-w-sm"
           />
           <div className="relative overflow-hidden rounded-3xl border bg-card p-10 shadow-sm">
