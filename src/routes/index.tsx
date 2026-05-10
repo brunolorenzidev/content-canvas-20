@@ -10,7 +10,7 @@ import { BorderBeam } from "@/components/ui/border-beam";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
 import grafenoBottle from "@/assets/grafeno-bottle-loop-original.mp4";
-import grafenoProduct from "@/assets/grafeno-product-new.gif";
+import grafenoProduct from "@/assets/grafeno-product-video.mp4";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
 import productsLineup from "@/assets/products-lineup-v3.png";
@@ -100,7 +100,7 @@ function Header() {
 function Hero() {
   return (
     <section className="relative overflow-hidden text-brand-foreground bg-black">
-      <div className="pointer-events-none absolute inset-0 z-20">
+      <div className="pointer-events-none absolute inset-0 z-0">
         <ParticlesComponent />
       </div>
       <div className="relative z-10 mx-auto grid min-h-[80vh] max-w-7xl grid-cols-1 items-center gap-10 px-8 py-20 lg:grid-cols-2">
@@ -147,7 +147,7 @@ function ProductSection() {
     "5 Anos De Garantia Comprovada Em Pintura Automotiva",
   ];
   return (
-    <section id="produto" className="relative bg-background py-28">
+    <section id="produto" className="relative py-28" style={{ backgroundColor: "#E5E5E5" }}>
       <div className="mx-auto max-w-7xl px-8 text-center">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-brand">Conheça o produto</p>
         <h2 className="font-display text-4xl font-light text-foreground md:text-5xl">
@@ -160,9 +160,12 @@ function ProductSection() {
         </p>
 
         <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <img
+          <video
             src={grafenoProduct}
-            alt="Grafeno Coat"
+            autoPlay
+            loop
+            muted
+            playsInline
             className="mx-auto w-full max-w-sm"
           />
           <div className="relative overflow-hidden rounded-3xl border bg-card p-10 shadow-sm">
