@@ -344,7 +344,7 @@ function ResellerCTA() {
   return (
     <section className="bg-brand-dark py-12 text-brand-foreground">
       <div className="mx-auto flex max-w-5xl items-center justify-center px-8">
-        <ShinyButton>SER REVENDEDOR</ShinyButton>
+        <ShinyButton href="https://wa.me/554188206718?text=Ol%C3%A1!%20Vim%20pelo%20site%20Grafeno%20Coat" target="_blank" rel="noopener noreferrer">SER REVENDEDOR</ShinyButton>
       </div>
     </section>
   );
