@@ -12,7 +12,7 @@ interface ShinyButtonProps {
 export function ShinyButton({ children, onClick, className = "", href, target, rel }: ShinyButtonProps) {
   if (href) {
     return (
-      <a className={`shiny-cta ${className}`} href={href} target={target} rel={rel}>
+      <a className={`shiny-cta ${className}`} href={href} target={target} rel={rel} style={{ display: "inline-block", textDecoration: "none" }}>
         <span>{children}</span>
       </a>
     );
