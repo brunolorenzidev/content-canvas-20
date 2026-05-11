@@ -245,7 +245,7 @@ function ManualSection() {
           Disponibilizamos um manual completo para o uso correto do produto.
         </p>
         <div className="mt-10 inline-block">
-          <ShinyButton>BAIXAR O MANUAL COMPLETO</ShinyButton>
+          <ShinyButton href="https://docs.google.com/document/d/1pRjbrqJ50LaZxs5iIrZp240iCQMdCxH9/edit?usp=sharing&ouid=105035906569480722512&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">BAIXAR O MANUAL COMPLETO</ShinyButton>
         </div>
       </div>
     </section>
@@ -332,7 +332,7 @@ function ExclusiveSection() {
             proteção duradoura e proporcionando um melhor acabamento aos serviços de estética automotiva.
           </p>
           <div className="mt-8">
-            <ShinyButton>CONHEÇA A LINHA</ShinyButton>
+            <ShinyButton href="https://drive.google.com/file/d/1QWSofCEppBYa1oZzkLTD8Y3GMGxB05DG/view?usp=sharing" target="_blank" rel="noopener noreferrer">CONHEÇA A LINHA</ShinyButton>
           </div>
         </div>
       </div>
