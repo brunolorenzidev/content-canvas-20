@@ -10,7 +10,7 @@ import { BorderBeam } from "@/components/ui/border-beam";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
 import grafenoBottle from "@/assets/grafeno-bottle-loop-original.mp4";
-import grafenoProduct from "@/assets/grafeno-product-video.mp4";
+import grafenoProduct from "@/assets/grafeno-product-video-loop.mp4";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
 import productsLineup from "@/assets/products-lineup-v3.png";
@@ -144,7 +144,7 @@ function ProductSection() {
     "5 Anos De Garantia Comprovada Em Pintura Automotiva",
   ];
   return (
-    <section id="produto" className="relative py-28" style={{ backgroundColor: "#E5E5E5" }}>
+    <section id="produto" className="relative py-28" style={{ backgroundColor: "#FFFFFF" }}>
       <div className="mx-auto max-w-7xl px-8 text-center">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-brand">Conheça o produto</p>
         <h2 className="font-display text-4xl font-light text-foreground md:text-5xl">
