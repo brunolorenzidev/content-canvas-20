@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Download, Headphones, MessageSquare, Facebook, Twitter, Instagram, ChevronUp, Check, Play, X } from "lucide-react";
+import { ArrowRight, Download, Headphones, MessageSquare, Instagram, Youtube, ChevronUp, Check, Play, X } from "lucide-react";
 import { useState } from "react";
 import { MarqueeBanner } from "@/components/MarqueeBanner";
 import ParticlesComponent from "@/components/ui/particles-bg";
@@ -361,8 +361,11 @@ function Footer() {
             <div className="text-sm tracking-widest">COAT</div>
           </div>
           <div className="mt-6 flex gap-3">
-            {[Facebook, Twitter, Instagram].map((Icon, i) => (
-              <a key={i} href="#" className="grid size-9 place-items-center rounded-full bg-brand-foreground/10 hover:bg-brand">
+            {[
+              { Icon: Instagram, href: "https://www.instagram.com/alcance_profissional_brasil/" },
+              { Icon: Youtube, href: "https://www.youtube.com/@AlcanceProfissional" },
+            ].map(({ Icon, href }, i) => (
+              <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="grid size-9 place-items-center rounded-full bg-brand-foreground/10 hover:bg-brand">
                 <Icon className="size-4" />
               </a>
             ))}
