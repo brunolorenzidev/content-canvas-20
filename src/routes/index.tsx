@@ -157,7 +157,7 @@ function ProductSection() {
         </p>
 
         <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <div className="relative mx-auto w-full max-w-sm">
+          <div className="relative mx-auto w-full max-w-sm overflow-hidden rounded-[45%] px-2 py-1">
             <video
               src={grafenoProduct}
               autoPlay
@@ -168,9 +168,9 @@ function ProductSection() {
               style={{
                 mixBlendMode: "multiply",
                 WebkitMaskImage:
-                  "radial-gradient(ellipse 68% 72% at 50% 50%, #000 60%, rgba(0,0,0,0.25) 78%, rgba(0,0,0,0) 95%)",
+                  "radial-gradient(ellipse 62% 66% at 50% 50%, #000 58%, rgba(0,0,0,0.12) 74%, rgba(0,0,0,0) 90%)",
                 maskImage:
-                  "radial-gradient(ellipse 68% 72% at 50% 50%, #000 60%, rgba(0,0,0,0.25) 78%, rgba(0,0,0,0) 95%)",
+                  "radial-gradient(ellipse 62% 66% at 50% 50%, #000 58%, rgba(0,0,0,0.12) 74%, rgba(0,0,0,0) 90%)",
               }}
             />
           </div>
