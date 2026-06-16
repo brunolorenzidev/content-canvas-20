@@ -13,7 +13,7 @@ import grafenoBottle from "@/assets/grafeno-bottle-loop-original.mp4";
 import grafenoProduct from "@/assets/grafeno-product-video-v3-loop.mp4";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
-import productsLineup from "@/assets/products-lineup-v3.png";
+import productsLineup from "@/assets/products-lineup-v4.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -319,7 +319,7 @@ function ExclusiveSection() {
     <section className="bg-background py-28">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-8 lg:grid-cols-2">
         <TiltCard className="w-full" tiltLimit={12} scale={1.04} effect="evade" spotlight>
-          <img src={productsLineup} alt="Linha Alcance Profissional" loading="lazy" className="w-full h-auto" />
+          <img src={productsLineup.url} alt="Linha Alcance Profissional" loading="lazy" className="w-full h-auto" />
         </TiltCard>
         <div>
           <h2 className="font-display text-5xl font-light text-foreground">
