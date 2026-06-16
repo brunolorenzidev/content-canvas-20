@@ -164,6 +164,13 @@ function ProductSection() {
             muted
             playsInline
             className="mx-auto w-full max-w-sm"
+            style={{
+              mixBlendMode: "multiply",
+              WebkitMaskImage:
+                "radial-gradient(ellipse 75% 80% at 50% 50%, #000 55%, rgba(0,0,0,0.6) 75%, rgba(0,0,0,0) 100%)",
+              maskImage:
+                "radial-gradient(ellipse 75% 80% at 50% 50%, #000 55%, rgba(0,0,0,0.6) 75%, rgba(0,0,0,0) 100%)",
+            }}
           />
           <div className="relative overflow-hidden rounded-3xl border bg-card p-10 shadow-sm">
             <BorderBeam size={250} duration={12} colorFrom="#4ade80" colorTo="#065f46" />
