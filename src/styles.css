@@ -253,7 +253,7 @@
   aspect-ratio: 1;
   background: linear-gradient(-50deg, transparent, var(--shiny-cta-highlight), transparent);
   mask-image: radial-gradient(circle at bottom, transparent 40%, black);
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .shiny-cta span { z-index: 1; position: relative; }
 .shiny-cta span::before {
@@ -271,9 +271,10 @@
   animation-composition: add;
 }
 .shiny-cta:is(:hover, :focus-visible) {
-  --gradient-percent: 20%;
+  --gradient-percent: 25%;
   --gradient-angle-offset: 95deg;
   --gradient-shine: var(--shiny-cta-highlight-subtle);
+  box-shadow: inset 0 0 0 1px var(--shiny-cta-bg-subtle), 0 0 40px 4px rgba(0, 255, 102, 0.45);
 }
 .shiny-cta:is(:hover, :focus-visible),
 .shiny-cta:is(:hover, :focus-visible)::before,
