@@ -157,21 +157,23 @@ function ProductSection() {
         </p>
 
         <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <video
-            src={grafenoProduct}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="mx-auto w-full max-w-sm"
-            style={{
-              mixBlendMode: "multiply",
-              WebkitMaskImage:
-                "radial-gradient(ellipse 75% 80% at 50% 50%, #000 55%, rgba(0,0,0,0.6) 75%, rgba(0,0,0,0) 100%)",
-              maskImage:
-                "radial-gradient(ellipse 75% 80% at 50% 50%, #000 55%, rgba(0,0,0,0.6) 75%, rgba(0,0,0,0) 100%)",
-            }}
-          />
+          <div className="relative mx-auto w-full max-w-sm">
+            <video
+              src={grafenoProduct}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full"
+              style={{
+                mixBlendMode: "multiply",
+                WebkitMaskImage:
+                  "radial-gradient(ellipse 68% 72% at 50% 50%, #000 60%, rgba(0,0,0,0.25) 78%, rgba(0,0,0,0) 95%)",
+                maskImage:
+                  "radial-gradient(ellipse 68% 72% at 50% 50%, #000 60%, rgba(0,0,0,0.25) 78%, rgba(0,0,0,0) 95%)",
+              }}
+            />
+          </div>
           <div className="relative overflow-hidden rounded-3xl border bg-card p-10 shadow-sm">
             <BorderBeam size={250} duration={12} colorFrom="#4ade80" colorTo="#065f46" />
             <BorderBeam size={250} duration={12} delay={6} colorFrom="#22c55e" colorTo="#86efac" />
