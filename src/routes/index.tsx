@@ -319,7 +319,7 @@ function ExclusiveSection() {
     <section className="bg-background py-28">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-8 lg:grid-cols-2">
         <TiltCard className="w-full" tiltLimit={12} scale={1.04} effect="evade" spotlight>
-          <img src={productsLineup} alt="Linha Alcance Profissional" loading="lazy" className="w-full h-auto" />
+          <img src={productsLineup.url} alt="Linha Alcance Profissional" loading="lazy" className="w-full h-auto" />
         </TiltCard>
         <div>
           <h2 className="font-display text-5xl font-light text-foreground">
