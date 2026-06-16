@@ -191,8 +191,8 @@
   --shiny-cta-bg: #000000;
   --shiny-cta-bg-subtle: #1a1818;
   --shiny-cta-fg: #ffffff;
-  --shiny-cta-highlight: #00ff7f;
-  --shiny-cta-highlight-subtle: #84ffb0;
+  --shiny-cta-highlight: #00FF66;
+  --shiny-cta-highlight-subtle: #00C853;
   --animation: gradient-angle linear infinite;
   --duration: 3s;
   --shadow-size: 2px;
@@ -219,9 +219,9 @@
       var(--shiny-cta-highlight) calc(var(--gradient-percent) * 3),
       transparent calc(var(--gradient-percent) * 4)
     ) border-box;
-  box-shadow: inset 0 0 0 1px var(--shiny-cta-bg-subtle);
+  box-shadow: inset 0 0 0 1px var(--shiny-cta-bg-subtle), 0 0 0 0 transparent;
   transition: var(--transition);
-  transition-property: --gradient-angle-offset, --gradient-percent, --gradient-shine;
+  transition-property: --gradient-angle-offset, --gradient-percent, --gradient-shine, box-shadow;
 }
 .shiny-cta::before, .shiny-cta::after, .shiny-cta span::before {
   content: "";
@@ -253,7 +253,7 @@
   aspect-ratio: 1;
   background: linear-gradient(-50deg, transparent, var(--shiny-cta-highlight), transparent);
   mask-image: radial-gradient(circle at bottom, transparent 40%, black);
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .shiny-cta span { z-index: 1; position: relative; }
 .shiny-cta span::before {
@@ -271,9 +271,10 @@
   animation-composition: add;
 }
 .shiny-cta:is(:hover, :focus-visible) {
-  --gradient-percent: 20%;
+  --gradient-percent: 25%;
   --gradient-angle-offset: 95deg;
   --gradient-shine: var(--shiny-cta-highlight-subtle);
+  box-shadow: inset 0 0 0 1px var(--shiny-cta-bg-subtle), 0 0 40px 4px rgba(0, 255, 102, 0.45);
 }
 .shiny-cta:is(:hover, :focus-visible),
 .shiny-cta:is(:hover, :focus-visible)::before,
