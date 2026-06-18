@@ -176,21 +176,11 @@ function ProductSection() {
         </p>
 
         <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <div className="relative mx-auto w-full max-w-sm overflow-hidden rounded-[45%] px-2 py-1">
-            <video
-              src={grafenoProduct}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full"
-              style={{
-                mixBlendMode: "screen",
-                WebkitMaskImage:
-                  "radial-gradient(ellipse 62% 66% at 50% 50%, #000 58%, rgba(0,0,0,0.12) 74%, rgba(0,0,0,0) 90%)",
-                maskImage:
-                  "radial-gradient(ellipse 62% 66% at 50% 50%, #000 58%, rgba(0,0,0,0.12) 74%, rgba(0,0,0,0) 90%)",
-              }}
+          <div className="relative mx-auto w-full max-w-sm px-2 py-1">
+            <img
+              src={grafenoBottleNew}
+              alt="Frasco Grafeno Coat"
+              className="relative z-10 mx-auto w-full h-auto drop-shadow-[0_0_30px_rgba(0,255,102,0.25)]"
             />
           </div>
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-card/90 p-10 shadow-lg backdrop-blur-sm">
