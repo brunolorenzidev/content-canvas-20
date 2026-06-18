@@ -181,7 +181,7 @@ function ProductSection() {
               src={grafenoBottleNew}
               alt="Frasco Grafeno Coat"
               className="relative z-10 mx-auto w-full h-auto drop-shadow-[0_0_30px_rgba(0,255,102,0.25)]"
-              style={{ mixBlendMode: "multiply" }}
+              style={{ mixBlendMode: "multiply", filter: "brightness(1.15) contrast(1.05)" }}
             />
           </div>
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-card/90 p-10 shadow-lg backdrop-blur-sm">
