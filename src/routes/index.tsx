@@ -145,13 +145,31 @@ function ProductSection() {
     "5 Anos De Garantia Comprovada Em Pintura Automotiva",
   ];
   return (
-    <section id="produto" className="relative py-28" style={{ backgroundColor: "#FFFFFF" }}>
-      <div className="mx-auto max-w-7xl px-8 text-center">
+    <section id="produto" className="relative overflow-hidden py-28" style={{ backgroundColor: "#000000" }}>
+      {/* Video background */}
+      <div className="pointer-events-none absolute inset-0 z-0">
+        <video
+          src={grafenoBgVideo.url}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 object-contain"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.7) 100%)",
+          }}
+        />
+      </div>
+      <div className="relative z-10 mx-auto max-w-7xl px-8 text-center">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-brand">Conheça o produto</p>
-        <h2 className="font-display text-4xl font-light text-foreground md:text-5xl">
+        <h2 className="font-display text-4xl font-light text-white md:text-5xl">
           Grafeno Coat <span className="font-bold">5 anos de garantia | 9H</span>
         </h2>
-        <p className="mx-auto mt-6 max-w-3xl text-muted-foreground">
+        <p className="mx-auto mt-6 max-w-3xl text-white/80">
           Revestimento híbrido constituído por átomos de carbono com estrutura molecular bidimensional
           ligado a moléculas de oxigênio que utiliza como coadjuvantes materiais inorgânicos, o que
           possibilita uma excelente ligação a diversos tipos de superfícies no veículo.
@@ -167,7 +185,7 @@ function ProductSection() {
               playsInline
               className="w-full"
               style={{
-                mixBlendMode: "multiply",
+                mixBlendMode: "screen",
                 WebkitMaskImage:
                   "radial-gradient(ellipse 62% 66% at 50% 50%, #000 58%, rgba(0,0,0,0.12) 74%, rgba(0,0,0,0) 90%)",
                 maskImage:
@@ -175,7 +193,7 @@ function ProductSection() {
               }}
             />
           </div>
-          <div className="relative overflow-hidden rounded-3xl border bg-card p-10 shadow-sm">
+          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-card/90 p-10 shadow-lg backdrop-blur-sm">
             <BorderBeam size={250} duration={12} colorFrom="#4ade80" colorTo="#065f46" />
             <BorderBeam size={250} duration={12} delay={6} colorFrom="#22c55e" colorTo="#86efac" />
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
