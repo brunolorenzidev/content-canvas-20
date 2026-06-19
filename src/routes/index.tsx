@@ -10,7 +10,7 @@ import { BorderBeam } from "@/components/ui/border-beam";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
 import grafenoBottle from "@/assets/grafeno-bottle-loop-original.mp4";
-import grafenoBottleNew from "@/assets/grafeno-bottle-new.png";
+
 import grafenoLogo from "@/assets/grafeno-logo.png";
 import grapheneProcess from "@/assets/graphene-process.png";
 import productsLineup from "@/assets/products-lineup-v4.png.asset.json";
@@ -154,7 +154,7 @@ function ProductSection() {
           loop
           muted
           playsInline
-          className="absolute left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 object-contain"
+          className="absolute left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 object-cover md:object-contain"
         />
         <div
           className="absolute inset-0"
@@ -175,16 +175,8 @@ function ProductSection() {
           possibilita uma excelente ligação a diversos tipos de superfícies no veículo.
         </p>
 
-        <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <div className="relative mx-auto w-full max-w-sm px-2 py-1">
-            <img
-              src={grafenoBottleNew}
-              alt="Frasco Grafeno Coat"
-              className="relative z-10 mx-auto w-full h-auto drop-shadow-[0_0_30px_rgba(0,255,102,0.25)]"
-              style={{ mixBlendMode: "multiply", filter: "brightness(1.15) contrast(1.05)" }}
-            />
-          </div>
-          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-card/90 p-10 shadow-lg backdrop-blur-sm">
+        <div className="mt-16 flex justify-center">
+          <div className="relative w-full max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-card/90 p-10 shadow-lg backdrop-blur-sm">
             <BorderBeam size={250} duration={12} colorFrom="#4ade80" colorTo="#065f46" />
             <BorderBeam size={250} duration={12} delay={6} colorFrom="#22c55e" colorTo="#86efac" />
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
