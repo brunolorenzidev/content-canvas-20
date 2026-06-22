@@ -12,6 +12,7 @@ import { BenefitsCarousel } from "@/components/ui/benefits-carousel";
 import grafenoBottle from "@/assets/grafeno-bottle-loop-original.mp4";
 
 import grafenoLogo from "@/assets/grafeno-logo.png";
+import grafenoLogoNew from "@/assets/logo-grafeno-new.png.asset.json";
 import grapheneProcess from "@/assets/graphene-process.png";
 import productsLineup from "@/assets/products-lineup-v4.png.asset.json";
 import grafenoBgVideo from "@/assets/grafeno-bg.mp4.asset.json";
