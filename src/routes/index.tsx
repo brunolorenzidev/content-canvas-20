@@ -79,11 +79,7 @@ function Header() {
     <header className="absolute top-0 left-0 right-0 z-30 px-8 py-6">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src={grafenoLogoNew.url} alt="Grafeno Coat" className="h-10 w-auto" style={{ height: 40 }} />
-          <div className="text-brand-foreground">
-            <div className="text-lg font-bold leading-none">Grafeno<sup>®</sup></div>
-            <div className="text-xs tracking-widest opacity-80">COAT</div>
-          </div>
+          <img src={grafenoLogoNew.url} alt="Grafeno Coat" style={{ height: 48, width: "auto", objectFit: "contain" }} />
         </div>
         <nav className="hidden gap-8 text-sm font-medium text-brand-foreground/90 md:flex">
           <a href="#produto" className="hover:text-brand-foreground">Produto</a>
@@ -367,11 +363,7 @@ function Footer() {
     <footer id="contato" className="bg-brand-dark text-brand-foreground/80">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-8 py-20 md:grid-cols-3">
         <div>
-          <img src={grafenoLogo} alt="Grafeno Coat" className="h-16 w-16" />
-          <div className="mt-3">
-            <div className="text-2xl font-bold">Grafeno<sup>®</sup></div>
-            <div className="text-sm tracking-widest">COAT</div>
-          </div>
+          <img src={grafenoLogoNew.url} alt="Grafeno Coat" style={{ height: 48, width: "auto", objectFit: "contain" }} />
           <div className="mt-6 flex gap-3">
             {[
               { Icon: Instagram, href: "https://www.instagram.com/alcance_profissional_brasil/" },
