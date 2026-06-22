@@ -16,6 +16,7 @@ import grafenoLogoNew from "@/assets/logo-grafeno-new.png.asset.json";
 import grapheneProcess from "@/assets/graphene-process.png";
 import productsLineup from "@/assets/products-lineup-v4.png.asset.json";
 import grafenoBgVideo from "@/assets/grafeno-bg.mp4.asset.json";
+import moleculaGrafeno from "@/assets/molecula-grafeno.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
