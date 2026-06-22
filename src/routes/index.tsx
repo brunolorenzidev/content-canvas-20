@@ -263,6 +263,27 @@ function ManualSection() {
 
 function CeramicVsGraphene() {
   const [open, setOpen] = useState(false);
+  const moleculeRef = useRef<HTMLImageElement | null>(null);
+  const [moleculeVisible, setMoleculeVisible] = useState(false);
+
+  useEffect(() => {
+    const el = moleculeRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setMoleculeVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="relative overflow-hidden text-brand-foreground" style={{ background: "var(--gradient-brand)" }}>
       <AuroraBackground showRadialGradient className="!h-auto !bg-transparent py-28">
