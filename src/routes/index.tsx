@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Download, Headphones, MessageSquare, Instagram, Youtube, ChevronUp, Check, Play, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MarqueeBanner } from "@/components/MarqueeBanner";
 import ParticlesComponent from "@/components/ui/particles-bg";
 import { ShinyButton } from "@/components/ui/shiny-button";
@@ -16,6 +16,7 @@ import grafenoLogoNew from "@/assets/logo-grafeno-new.png.asset.json";
 import grapheneProcess from "@/assets/graphene-process.png";
 import productsLineup from "@/assets/products-lineup-v4.png.asset.json";
 import grafenoBgVideo from "@/assets/grafeno-bg.mp4.asset.json";
+import moleculaGrafeno from "@/assets/molecula-grafeno.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -262,6 +263,27 @@ function ManualSection() {
 
 function CeramicVsGraphene() {
   const [open, setOpen] = useState(false);
+  const moleculeRef = useRef<HTMLImageElement | null>(null);
+  const [moleculeVisible, setMoleculeVisible] = useState(false);
+
+  useEffect(() => {
+    const el = moleculeRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setMoleculeVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="relative overflow-hidden text-brand-foreground" style={{ background: "var(--gradient-brand)" }}>
       <AuroraBackground showRadialGradient className="!h-auto !bg-transparent py-28">
@@ -288,9 +310,18 @@ function CeramicVsGraphene() {
         <button
           onClick={() => setOpen(true)}
           aria-label="Reproduzir vídeo"
-          className="mt-16 inline-grid size-20 place-items-center rounded-full bg-brand text-brand-foreground shadow-lg transition-transform hover:scale-110"
+          className="mt-16 inline-block transition-transform hover:scale-105"
         >
-          <Play className="size-8 fill-current" />
+          <img
+            ref={moleculeRef}
+            src={moleculaGrafeno.url}
+            alt="Comparação molecular: revestimento de grafeno vs cerâmico"
+            style={{
+              opacity: moleculeVisible ? 1 : 0,
+              transition: "opacity 0.8s ease-in-out",
+            }}
+            className="max-w-full h-auto"
+          />
         </button>
       </div>
       </AuroraBackground>
