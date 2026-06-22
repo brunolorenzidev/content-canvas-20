@@ -79,7 +79,7 @@ function Header() {
     <header className="absolute top-0 left-0 right-0 z-30 px-8 py-6">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src={grafenoLogo} alt="Grafeno Coat" className="h-10 w-10" />
+          <img src={grafenoLogoNew.url} alt="Grafeno Coat" className="h-10 w-auto" style={{ height: 40 }} />
           <div className="text-brand-foreground">
             <div className="text-lg font-bold leading-none">Grafeno<sup>®</sup></div>
             <div className="text-xs tracking-widest opacity-80">COAT</div>
