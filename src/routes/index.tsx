@@ -363,7 +363,7 @@ function Footer() {
     <footer id="contato" className="bg-brand-dark text-brand-foreground/80">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-8 py-20 md:grid-cols-3">
         <div>
-          <img src={grafenoLogoNew.url} alt="Grafeno Coat" style={{ height: 48, width: "auto", objectFit: "contain" }} />
+          <img src={grafenoLogoNew.url} alt="Grafeno Coat" style={{ height: 80, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} />
           <div className="mt-6 flex gap-3">
             {[
               { Icon: Instagram, href: "https://www.instagram.com/alcance_profissional_brasil/" },
