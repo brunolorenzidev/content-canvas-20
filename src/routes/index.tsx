@@ -310,9 +310,18 @@ function CeramicVsGraphene() {
         <button
           onClick={() => setOpen(true)}
           aria-label="Reproduzir vídeo"
-          className="mt-16 inline-grid size-20 place-items-center rounded-full bg-brand text-brand-foreground shadow-lg transition-transform hover:scale-110"
+          className="mt-16 inline-block transition-transform hover:scale-105"
         >
-          <Play className="size-8 fill-current" />
+          <img
+            ref={moleculeRef}
+            src={moleculaGrafeno.url}
+            alt="Comparação molecular: revestimento de grafeno vs cerâmico"
+            style={{
+              opacity: moleculeVisible ? 1 : 0,
+              transition: "opacity 0.8s ease-in-out",
+            }}
+            className="max-w-full h-auto"
+          />
         </button>
       </div>
       </AuroraBackground>
