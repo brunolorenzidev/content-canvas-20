@@ -248,13 +248,29 @@ function TechSection() {
 function ManualSection() {
   return (
     <section id="manual" className="relative overflow-hidden text-brand-foreground" style={{ background: "var(--gradient-brand)" }}>
-      <div className="mx-auto max-w-4xl px-8 py-28 text-center">
-        <h2 className="font-display text-5xl font-light">Manual de uso</h2>
-        <p className="mt-4 text-brand-foreground/80">
-          Disponibilizamos um manual completo para o uso correto do produto.
-        </p>
-        <div className="mt-10 inline-block">
-          <ShinyButton href="https://docs.google.com/document/d/1pRjbrqJ50LaZxs5iIrZp240iCQMdCxH9/edit?usp=sharing&ouid=105035906569480722512&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">BAIXAR O MANUAL COMPLETO</ShinyButton>
+      <div className="mx-auto max-w-6xl px-8 py-28">
+        <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2 md:gap-16">
+          <div className="text-left">
+            <h2 className="font-display text-5xl font-light">Manual de uso</h2>
+            <p className="mt-4 text-brand-foreground/80">
+              Disponibilizamos um manual completo para o uso correto do produto.
+            </p>
+            <div className="mt-10">
+              <ShinyButton href="https://docs.google.com/document/d/1pRjbrqJ50LaZxs5iIrZp240iCQMdCxH9/edit?usp=sharing&ouid=105035906569480722512&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">BAIXAR O MANUAL COMPLETO</ShinyButton>
+            </div>
+          </div>
+          <div className="text-left">
+            <h2 className="font-display text-5xl font-light">Como Aplicar</h2>
+            <div className="mt-6 overflow-hidden rounded-lg" style={{ aspectRatio: "16 / 9" }}>
+              <iframe
+                src="https://www.youtube.com/embed/XoM6LmwfRfo"
+                title="Como Aplicar"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                style={{ width: "100%", height: "100%", border: 0 }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
