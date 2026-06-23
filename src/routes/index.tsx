@@ -469,11 +469,12 @@ function Footer() {
           <img src={grafenoLogoNew.url} alt="Grafeno Coat" style={{ height: 80, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} />
           <div className="mt-6 flex gap-3">
             {[
-              { Icon: Instagram, href: "https://www.instagram.com/alcance_profissional_brasil/" },
-              { Icon: Youtube, href: "https://www.youtube.com/@AlcanceProfissional" },
-            ].map(({ Icon, href }, i) => (
-              <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="grid size-9 place-items-center rounded-full bg-brand-foreground/10 hover:bg-brand">
-                <Icon className="size-4" />
+              { Icon: Instagram, href: "https://www.instagram.com/alcance_profissional_brasil/", label: "Instagram da Alcance Profissional" },
+              { Icon: Youtube, href: "https://www.youtube.com/@AlcanceProfissional", label: "Canal da Alcance Profissional no YouTube" },
+            ].map(({ Icon, href, label }, i) => (
+              <a key={i} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="grid size-9 place-items-center rounded-full bg-brand-foreground/10 hover:bg-brand">
+                <Icon className="size-4" aria-hidden="true" />
+                <span className="sr-only">{label}</span>
               </a>
             ))}
           </div>
