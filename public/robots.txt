@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://content-canvas-20.lovable.app/sitemap.xml
