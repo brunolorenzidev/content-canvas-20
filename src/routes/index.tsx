@@ -18,15 +18,70 @@ import productsLineup from "@/assets/products-lineup-v4.png.asset.json";
 import grafenoBgVideo from "@/assets/grafeno-bg.mp4.asset.json";
 import moleculaGrafeno from "@/assets/molecula-grafeno.png.asset.json";
 
+const SITE_URL = "https://content-canvas-20.lovable.app";
+const OG_IMAGE =
+  "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a0305999-065b-4b7c-8f4a-0bd7ab1c9d65/id-preview-651d0be9--d09f817a-1528-47b4-9b40-df68fb7072d8.lovable.app-1778001676139.png";
+
 export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Grafeno Coat — Revestimento de Grafeno 9H | 5 anos de garantia" },
+      { title: "Grafeno Coat — Revestimento 9H | 5 anos" },
       {
         name: "description",
         content:
-          "Grafeno Coat: revestimento híbrido de grafeno para pintura automotiva, 9H de dureza e 5 anos de garantia. Da Alcance Profissional.",
+          "Revestimento híbrido de grafeno para pintura automotiva: dureza 9H e 5 anos de garantia. Por Alcance Profissional.",
+      },
+      { property: "og:title", content: "Grafeno Coat — Revestimento 9H | 5 anos" },
+      {
+        property: "og:description",
+        content:
+          "Revestimento híbrido de grafeno para pintura automotiva: dureza 9H e 5 anos de garantia.",
+      },
+      { property: "og:url", content: SITE_URL + "/" },
+      { property: "og:image", content: OG_IMAGE },
+      { name: "twitter:title", content: "Grafeno Coat — Revestimento 9H | 5 anos" },
+      {
+        name: "twitter:description",
+        content:
+          "Revestimento híbrido de grafeno para pintura automotiva: dureza 9H e 5 anos de garantia.",
+      },
+      { name: "twitter:image", content: OG_IMAGE },
+    ],
+    links: [{ rel: "canonical", href: SITE_URL + "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: "Grafeno Coat",
+          description:
+            "Revestimento híbrido de grafeno para pintura automotiva, com 9H de dureza e 5 anos de garantia.",
+          brand: { "@type": "Brand", name: "Grafeno Coat" },
+          manufacturer: { "@type": "Organization", name: "Alcance Profissional" },
+          image: OG_IMAGE,
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Alcance Profissional",
+          url: SITE_URL,
+          sameAs: [
+            "https://www.instagram.com/alcance_profissional_brasil/",
+            "https://www.youtube.com/@AlcanceProfissional",
+          ],
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+55-41-8820-6718",
+            contactType: "sales",
+            areaServed: "BR",
+            availableLanguage: ["Portuguese"],
+          },
+        }),
       },
     ],
   }),
