@@ -162,6 +162,7 @@ function Hero() {
           </p>
           <h1 className="font-display text-4xl font-extrabold leading-[1.05] md:text-6xl">
             GRAFENO <span className="block text-brand">COAT</span>
+            <span className="sr-only">— Revestimento de Grafeno 9H com 5 anos de garantia</span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-foreground/85">
             Uma evolução dos sistemas de proteção de pintura automotiva, com nano partículas
